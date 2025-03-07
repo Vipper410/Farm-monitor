@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Dashboard</title>
+    <link rel="stylesheet" href="ds.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Farm Monitoring Dashboard</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="info-box">
+                <h2>Soil Moisture</h2>
+                <p id="soil-moisture">Loading...</p>
+            </div>
+
+            <div class="info-box">
+                <h2>Soil Temperature</h2>
+                <p id="soil-temp">Loading...</p>
+            </div>
+
+            <div class="info-box">
+                <h2>City Temperature</h2>
+                <p id="city-temp">Loading...</p>
+            </div>
+
+            <div class="info-box">
+                <h2>Water Level</h2>
+                <p id="water-level">Loading...</p>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart-container">
+                <h2>Yearly Temperature Trend</h2>
+                <canvas id="yearlyTempChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h2>Farmer User Distribution</h2>
+                <canvas id="farmerChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="ds.js"></script>
+</body>
+</html>
